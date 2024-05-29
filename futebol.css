@@ -1,0 +1,456 @@
+/* Define as configurações gerais do body */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo do documento */
+  margin: 0; /* Remove margem padrão do body */
+  padding: 0; /* Remove preenchimento padrão do body */
+  background-image: linear-gradient(
+    135deg,
+    #26173e,
+    #9d79d8
+  ); /* Cria um degradê com as cores fornecidas */
+  background-color: #462a72; /* Cor de fundo de fallback */
+}
+
+/* Estiliza a foto no canto superior direito */
+.foto-topo-direita > img {
+  width: 150px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Faz com que a imagem seja exibida como um bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  float: right; /* Move a div com a foto para a direita */
+  margin-left: 10px; /* Adiciona uma margem à esquerda da imagem */
+}
+
+/* Estiliza a foto no canto superior esquerdo */
+.foto-topo-esquerda > img {
+  width: 95px; /* Define a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Faz com que a imagem seja exibida como um bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  float: left; /* Move a div com a foto para a esquerda */
+  margin-right: 10px; /* Adiciona uma margem à direita da imagem */
+  margin-left: 10px; /* Adiciona uma margem à esquerda da imagem */
+}
+
+/* Estiliza a classe 'texto' e 'historia' */
+/* Estiliza a classe 'texto' e 'historia' */
+.texto,
+.historia {
+  color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+  padding: 20px; /* Adiciona espaçamento interno */
+  border-radius: 10px; /* Arredonda as bordas */
+  margin-bottom: 20px; /* Adiciona espaço na parte inferior */
+  max-width: 800px; /* Limita a largura do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estiliza o container */
+.container {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  font-family: "Roboto", sans-serif; /* Define a fonte Roboto */
+}
+
+/* Estiliza o título */
+.titulo {
+  font-size: 60px; /* Define o tamanho da fonte */
+  font-weight: bold; /* Deixa o texto em negrito */
+  margin-bottom: 15px; /* Adiciona um espaço maior entre o título e o texto */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estiliza o texto */
+.texto {
+  font-size: 22px; /* Define o tamanho da fonte */
+  font-family: Roboto, sans-serif; /* Define a fonte Roboto */
+}
+
+/* Define um contêiner para o carousel */
+.carousel {
+  position: relative; /* Define a posição do carousel como relativa ao seu contêiner pai */
+  max-width: 800px; /* Define a largura máxima do carousel */
+  margin: 50px auto; /* Define margens superior e inferior e centraliza horizontalmente */
+  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse as dimensões do carousel */
+}
+
+/* Define o contêiner que envolve todos os slides do carousel */
+.carousel-container {
+  display: flex; /* Define o layout do contêiner como flexível */
+  transition: transform 0.5s ease; /* Adiciona uma transição suave ao transformar os slides */
+}
+
+/* Define um slide do carousel */
+.carousel-slide {
+  min-width: 100%; /* Garante que cada slide ocupe pelo menos 100% da largura do carousel */
+}
+
+/* Estiliza as imagens dentro dos slides */
+.carousel-slide img {
+  width: 100%; /* Define a largura da imagem como 100% do contêiner pai */
+  height: auto; /* Permite que a altura da imagem seja ajustada automaticamente de acordo com a largura */
+}
+
+/* Estiliza os botões de navegação do carousel */
+.carousel-prev,
+.carousel-next {
+  position: absolute; /* Define a posição dos botões de navegação como absoluta em relação ao carousel */
+  top: 50%; /* Alinha os botões verticalmente ao centro */
+  transform: translateY(-50%); /* Ajusta a posição vertical dos botões */
+  background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo dos botões */
+  color: white; /* Define a cor do texto dos botões */
+  border: none; /* Remove a borda dos botões */
+  cursor: pointer; /* Define o cursor do mouse como ponteiro */
+  padding: 10px; /* Adiciona espaço interno aos botões */
+  z-index: 2; /* Define a ordem de empilhamento dos botões */
+}
+
+/* Posiciona o botão de navegação "anterior" */
+.carousel-prev {
+  left: 0; /* Alinha o botão de navegação "anterior" à esquerda do carousel */
+}
+
+/* Posiciona o botão de navegação "próximo" */
+.carousel-next {
+  right: 0; /* Alinha o botão de navegação "próximo" à direita do carousel */
+}
+
+/* Estiliza os botões de navegação do carousel ao passar o mouse */
+.carousel-prev,
+.carousel-next {
+  transition: background-color 0.3s; /* Adiciona uma transição suave à cor de fundo dos botões */
+}
+
+/* Altera a cor de fundo dos botões ao passar o mouse sobre eles */
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Altera a cor de fundo ao passar o mouse sobre os botões */
+}
+
+/* Estiliza o header */
+header {
+  background-color: #672374; /* Cor de fundo do header */
+  color: #ffffff; /* Cor do texto no header */
+  padding: 20px; /* Adiciona espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estiliza o h1 */
+h1 {
+  margin: 0; /* Remove margem padrão do h1 */
+}
+
+/* Estiliza as seções */
+section {
+  padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Estiliza o footer */
+footer {
+  position: fixed; /* Fixa o footer na parte inferior da tela */
+  bottom: 0; /* Alinha o footer na parte inferior da tela */
+  left: 0; /* Alinha o footer à esquerda da tela */
+  width: 100%; /* Define a largura do footer */
+  height: 50px; /* Define a altura do footer */
+  background-color: #4e4a4a80; /* Cor de fundo do footer */
+  color: #ffffff; /* Cor do texto no footer */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  line-height: 30px; /* Define a altura da linha */
+}
+
+/* Estilo para a seção de notícias */
+#noticias {
+  margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+}
+
+.titulo-noticias {
+  color: #fff; /* Define a cor do texto como branco */
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Estilo para cada notícia individual */
+.noticia {
+  display: flex; /* Utiliza o modelo flexbox para organizar os elementos */
+  align-items: center; /* Alinha verticalmente os elementos ao centro */
+  background-color: #fff; /* Define o fundo branco para cada notícia */
+  padding: 20px; /* Adiciona espaçamento interno de 20 pixels */
+  border-radius: 8px; /* Arredonda as bordas da notícia */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  margin-bottom: 40px; /* Adiciona uma margem inferior de 30 pixels */
+}
+
+/* Estilo para as imagens dentro de cada notícia */
+.noticia img {
+  width: 150px; /* Define a largura da imagem como 150 pixels */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Arredonda as bordas da imagem */
+  margin-right: 20px; /* Adiciona uma margem à direita de 20 pixels */
+}
+
+/* Estilo para os títulos das notícias */
+.noticia-info h3 {
+  font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10 pixels */
+}
+
+/* Estilo para o texto de descrição das notícias */
+.noticia-info p {
+  font-size: 14px; /* Define o tamanho da fonte como 14 pixels */
+  line-height: 1.5; /* Define a altura da linha como 1.5 vezes o tamanho da fonte */
+  color: #333; /* Define a cor do texto como um tom de cinza escuro */
+}
+
+/* Estilo para os links dentro das notícias */
+.noticia-info a {
+  color: #007bff; /* Define a cor do texto dos links como azul */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Estilo para os links quando o cursor do mouse está sobre eles */
+.noticia-info a:hover {
+  text-decoration: underline; /* Adiciona um sublinhado aos links quando o mouse está sobre eles */
+}
+
+/* Estiliza a seção home */
+#home {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estiliza a seção história */
+.historia {
+  display: flex; /* Utiliza o modelo flexbox para organizar os elementos */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  align-items: center; /* Alinha verticalmente os elementos ao centro */
+  margin-top: 30px; /* Adiciona uma margem superior de 30 pixels */
+}
+
+/* Estiliza o texto */
+.texto {
+  flex: 1; /* Ocupa todo o espaço disponível */
+}
+
+/* Estiliza o título h2 dentro da seção home */
+#home h2 {
+  font-size: 32px; /* Define o tamanho da fonte como 32 pixels */
+  margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels */
+}
+
+/* Estiliza o parágrafo dentro da seção home */
+#home p {
+  font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+  line-height: 1.5; /* Define a altura da linha como 1.5 vezes o tamanho da fonte */
+  margin-bottom: 15px; /* Adiciona uma margem inferior de 15 pixels */
+}
+
+/* Estiliza a seção de calendário */
+#calendario {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estiliza o título h2 dentro da seção de calendário */
+#calendario h2 {
+  font-size: 28px; /* Define o tamanho da fonte como 28 pixels */
+  margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels */
+}
+
+/* Estiliza a classe jogos */
+.jogos {
+  display: flex; /* Utiliza o modelo flexbox para organizar os elementos */
+  flex-wrap: wrap; /* Permite que os elementos se ajustem à largura da tela */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  gap: 20px; /* Define o espaçamento entre os elementos */
+}
+
+/* Estiliza a classe jogo */
+.jogo {
+  background-color: #f2f2f2; /* Cor de fundo dos jogos */
+  border-radius: 10px; /* Arredonda as bordas */
+  padding: 20px; /* Adiciona espaçamento interno */
+  width: 300px; /* Define a largura dos jogos */
+}
+
+/* Estiliza o título h3 dentro da classe jogo */
+.jogo h3 {
+  font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10 pixels */
+}
+
+/* Estiliza o parágrafo dentro da classe jogo */
+.jogo p {
+  font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+  margin-bottom: 5px; /* Adiciona uma margem inferior de 5 pixels */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #28a745;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* stiliza o contêiner dos botões */
+.button-container {
+  position: absolute; /* Define a posição absoluta */
+  top: 130px; /* Define a distância do topo da tela */
+  left: 20px; /* Define a distância da esquerda da tela */
+  display: flex; /* Utiliza o modelo flexbox */
+  flex-direction: column; /* Organiza os botões em coluna */
+  gap: 5px; /* Define o espaçamento entre os botões */
+}
+
+/* Estiliza o botão de login e cadastro */
+.button-login,
+.button-signup {
+  padding: 6px 14px; /* Adiciona espaçamento interno aos botões */
+  font-size: 14px; /* Define o tamanho da fonte */
+  background-color: #4a90e2; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 5px; /* Arredonda as bordas do botão */
+  text-decoration: none; /* Remove a decoração do texto */
+  cursor: pointer; /* Define o cursor do mouse como mão */
+}
+
+/* Estiliza o botão de cadastro */
+.button-signup {
+  background-color: #28a745; /* Cor de fundo do botão de cadastro */
+}
+
+/* Estiliza o texto do conteúdo */
+@media screen and (max-width: 768px) {
+  .texto {
+    font-size: 18px; /* Define o tamanho da fonte como 18 pixels em telas menores */
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #672374;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav-active {
+    display: flex;
+  }
+}
+.navbar {
+  background-color: #581b5e; /* Cor de fundo da nav */
+  padding: 20px; /* Adiciona espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.nav-links {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block; /* Exibe os itens da lista em linha */
+}
+
+.nav-links li a {
+  color: #fff; /* Cor dos links */
+  text-decoration: none; /* Remove sublinhado dos links */
+  margin: 0 15px; /* Define margem dos links */
+  padding: 10px 0; /* Adiciona espaçamento interno aos links */
+  position: relative; /* Define a posição relativa para os links */
+}
+
+.nav-links li a:before {
+  content: ""; /* Adiciona um conteúdo vazio */
+  position: absolute; /* Define a posição absoluta */
+  bottom: 0; /* Alinha ao fundo do elemento pai */
+  left: 0; /* Alinha à esquerda do elemento pai */
+  width: 100%; /* Define a largura igual à largura do elemento pai */
+  height: 3px; /* Define a altura da linha */
+  background-color: rgba(255, 255, 255, 0.3); /* Cor da linha */
+  transform: scaleX(0); /* Inicialmente, a linha não é visível */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.nav-links li a:hover:before {
+  transform: scaleX(1); /* Quando o mouse passa por cima, a linha é visível */
+}
+
+.burger {
+  display: none; /* Esconde o ícone do menu em telas maiores */
+}
+/* Adicione suas estilizações aqui */
+
+.nav-links li a {
+  /* Adicione seus estilos de link aqui */
+}
+
+.nav-links li a.active {
+  animation: navClicked 0.5s ease; /* Adicione a animação quando o link estiver ativo */
+}
+/* Adicione suas estilizações aqui */
+
+.animate-section {
+  animation: fadeIn 5s ease; /* Adicione a animação desejada */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Ajuste conforme necessário */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

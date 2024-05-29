@@ -1,0 +1,316 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profissionais - Escola de Futebol</title>
+    <link rel="stylesheet" href="futebol.css" />
+    <script src="futebol.js" defer></script>
+  </head>
+  <body>
+    <div class="foto-topo-direita">
+      <img src="imagens/coruja.png" alt="coruja-foto" />
+    </div>
+    <div class="foto-topo-esquerda">
+      <img
+        src="imagens/logotipo.png"
+        alt="logotipo-foto"
+      />
+    </div>
+    <div class="button-container">
+      <a href="pagina_de_login.html" class="button-login">Login</a>
+      <a href="pagina_de_cadastro.html" class="button-signup">Cadastro</a>
+    </div>
+    <header>
+      <h1>
+        Escola de Futebol Unidos do Jardim<br />
+        Resende
+      </h1>
+    </header>
+
+    <nav class="navbar">
+      <div class="logo"></div>
+      <ul class="nav-links">
+          <li><a href="#Inicio" onclick="mostrarSecao('Inicio')">Início</a></li>
+          <li><a href="#Historia" onclick="mostrarSecao('Historia')">História</a></li>
+          <li><a href="#calendario" onclick="mostrarSecao('calendario')">Calendário</a></li>
+          <li><a href="#noticia" onclick="mostrarSecao('noticia')">Notícia</a></li>
+          <li><a href="#Classificacao" onclick="mostrarSecao('Classificao')">Classificação</a></li>
+          <li><a href="#Comissao" onclick="mostrarSecao('Comissao')">Comissão Técnica</a></li>
+      </ul>
+      </ul>
+      </ul>
+      <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+  </nav>
+
+    <section id="Inicio">
+      <div class="historia">
+        <div class="container">
+          <p class="titulo">QUEM SOMOS?</p>
+          <div class="texto">
+            <p>
+              Há 7 anos, estamos moldando jovens talentos no coração de
+              Pindamonhangaba.
+            </p>
+            <p>
+              Somos mais que um time, somos uma família apaixonada pelo esporte,
+              dedicada a cultivar o amor pelo futebol em meninos e meninas com
+              idades entre 6 e 15 anos.
+            </p>
+            <p>
+              Fundada em 2017, no vibrante bairro Jardim Rezende. Com empenho e
+              paixão, temos levado nossas cores e nosso espírito competitivo a
+              diversas categorias, erguendo troféus e consolidando nossa
+              presença nos campos por onde passamos.
+            </p>
+            <p>
+              Aqui, não apenas ensinamos habilidades técnicas e táticas do jogo,
+              mas também cultivamos valores fundamentais, como trabalho em
+              equipe, respeito e superação. Cada partida é uma oportunidade de
+              aprendizado, e cada treino é uma chance de crescimento pessoal e
+              esportivo.
+            </p>
+            <p>
+              Nossos jogadores são o coração de tudo o que fazemos. Cada chute,
+              cada gol e cada celebração marcam a jornada de jovens talentos que
+              têm o potencial de brilhar nos campos e na vida.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img
+              src="galeria/foto1.jpg"
+              alt="Slide 1"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="galeria/foto2.jpg"
+              alt="Slide 2"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="galeria/foto3.jpg"
+              alt="Slide 3"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="galeria/foto4.jpg"
+              alt="Slide 3"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="galeria/foto5.jpg"
+              alt="Slide 3"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="galeria/foto6.jpg"
+              alt="Slide 3"
+            />
+          </div>
+        </div>
+        <button class="carousel-prev">&#10094;</button>
+        <button class="carousel-next">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="noticia">
+      <h2 class="titulo-noticias">Notícias</h2>
+      <ul>
+        <li>
+          <div class="noticia">
+            <img src="imagem noticias/campeão.jpg" alt="Imagem da Notícia 1" />
+            <div class="noticia-info">
+              <h3>Unidos do Jardim Rezende é campeão do futebol Sub11 em Pindamonhangaba; veja fotos:<br><br>
+                Publicada em:
+                <a href="https://www.portalr3.com.br/2019/06/01/unidos-do-jardim-rezende-e-campeao-do-futebol-sub11-em-pinda-veja-fotos/" target="_blank"
+                  >PortalR3.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="noticia">
+            <img src="imagem noticias/sênior.jpg" alt="Imagem da Notícia 2" />
+            <div class="noticia-info">
+              <h3>
+                Unidos do Jardim Rezende é campeão do futebol Sênior35 em Pindamonhangaba<br><br>
+                Publicada em:
+                <a
+                  href="https://www.portalr3.com.br/2015/11/30/unidos-do-jardim-rezende-e-campeao-do-futebol-senior35-em-pinda/"
+                  target="_blank"
+                  >PortalR3.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="noticia">
+            <img
+              src="jogador.jpg"
+              alt="Jovem promessa assina contrato profissional com grande clube europeu"
+            />
+            <div class="noticia-info">
+              <h3>
+                Jovem promessa assina contrato profissional com grande clube
+                europeu
+              </h3>
+              <p>
+                O talentoso jogador de 18 anos, Pedro Silva, assinou seu
+                primeiro contrato profissional com o renomado clube europeu Real
+                Fictício CF. Pedro, que tem se destacado nas categorias de base
+                do clube, é visto como uma das grandes promessas do futebol
+                mundial.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="noticia">
+            <img
+              src="tecnico.jpg"
+              alt="Técnico renomado retorna ao comando da seleção nacional"
+            />
+            <div class="noticia-info">
+              <h3>Técnico renomado retorna ao comando da seleção nacional</h3>
+              <p>
+                Após uma passagem bem-sucedida por clubes europeus, o técnico
+                experiente Carlos Rodrigues retorna para assumir o comando da
+                seleção nacional de seu país. Com um histórico de conquistas e
+                uma abordagem tática inovadora, Rodrigues busca levar a equipe
+                nacional de volta ao topo do futebol mundial.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="noticia">
+            <img
+              src="estadio.jpg"
+              alt="Estádio icônico passará por grande reforma"
+            />
+            <div class="noticia-info">
+              <h3>Estádio icônico passará por grande reforma</h3>
+              <p>
+                O lendário estádio Municipal da Cidade Nova, conhecido por
+                sediar partidas emocionantes ao longo das décadas, passará por
+                uma grande reforma para modernizar suas instalações. As
+                melhorias incluirão novos assentos, iluminação de última geração
+                e uma arquitetura inovadora, mantendo a tradição e o charme do
+                estádio intactos.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="noticia">
+            <img
+              src="parceria.jpg"
+              alt="Clube anuncia parceria com projeto social para desenvolvimento de jovens talentos"
+            />
+            <div class="noticia-info">
+              <h3>
+                Clube anuncia parceria com projeto social para desenvolvimento
+                de jovens talentos
+              </h3>
+              <p>
+                O Clube Atlético Esperança anunciou uma parceria emocionante com
+                um projeto social local para identificar e desenvolver jovens
+                talentos de comunidades carentes. A iniciativa busca
+                proporcionar oportunidades iguais para jovens apaixonados pelo
+                futebol, promovendo inclusão social e desenvolvimento humano.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="noticia">
+            <img
+              src="centro_treinamento.jpg"
+              alt="Inaugurado centro de treinamento de ponta para clubes de base"
+            />
+            <div class="noticia-info">
+              <h3>
+                Inaugurado centro de treinamento de ponta para clubes de base
+              </h3>
+              <p>
+                Um novo centro de treinamento de última geração foi inaugurado
+                para clubes de base da região. O Centro de Treinamento Prodigy
+                oferecerá instalações de primeira linha, tecnologia de ponta e
+                treinadores qualificados para ajudar a moldar o futuro do
+                futebol local, proporcionando uma plataforma para jovens
+                talentos alcançarem seu potencial máximo.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="calendario">
+      <h2>Calendário de Jogos</h2>
+      <div class="jogos">
+        <div class="jogo">
+          <h3>União Jardim Resende vs S.C Corinthians</h3>
+          <p>Data: 08 de Abril de 2024</p>
+          <p>Local: Estádio Municipal</p>
+        </div>
+        <div class="jogo">
+          <h3>C.R Flamengo vs União Jardim Resende</h3>
+          <p>Data: 17 de Abril de 2024</p>
+          <p>Local: Maracanã</p>
+        </div>
+        <div class="jogo">
+          <h3>União Jardim Resende vs S.E Palmeiras</h3>
+          <p>Data: 20 de Abril de 2024</p>
+          <p>Local: Estádio Municipal</p>
+        </div>
+        <div class="jogo">
+          <h3>União Jardim Resende vs S.C Corinthians</h3>
+          <p>Data: 17 de Abril de 2024</p>
+          <p>Local: Campo dos Profissionais</p>
+        </div>
+        <div class="jogo">
+          <h3>União Jardim Resende vs S.C Corinthians</h3>
+          <p>Data: 17 de Abril de 2024</p>
+          <p>Local: Campo dos Profissionais</p>
+        </div>
+        <div class="jogo">
+          <h3>União Jardim Resende vs S.C Corinthians</h3>
+          <p>Data: 17 de Abril de 2024</p>
+          <p>Local: Campo dos Profissionais</p>
+        </div>
+        <div class="jogo">
+          <h3>União Jardim Resende vs S.C Corinthians</h3>
+          <p>Data: 17 de Abril de 2024</p>
+          <p>Local: Campo dos Profissionais</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="classificacao">
+      <h2>Classificação</h2>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+    </section>
+
+    <section id="Comissão">
+      <h2>Comissão Técnica</h2>
+    </section>
+  </body>
+</html>
